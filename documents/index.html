@@ -4,67 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Jaianish Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Jaianish</a>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-    </section>
-
-    <section id="about" class="about-section">
-        <img src="/images/jaianish.jpg" alt="Jaianish" class="profile-img">
-        <div class="about-content">
-            <h1>About Me</h1>
-            <p>I am Jaianish, and I love front-end development. I enjoy creating websites that look good and are easy to use. I work with HTML, CSS, and JavaScript to build interactive and responsive designs. I am always learning new things to improve my skills and create better web experiences. My goal is to become a great front-end developer and build amazing websites. 
-
-
-
-
-
-
-
-            </p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Jaianish</span>
+                <span class="logo-subtitle">Frontend Developer</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active" data-slide="0">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-slide="1">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#projects" class="nav-link" data-slide="2">
+                    <i class="fas fa-code"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#education" class="nav-link" data-slide="3">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </a>
+                <a href="#contact" class="nav-link" data-slide="4">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </section>
+    </nav>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <ul>
-            <li>
-                <h2>Coffee Website</h2>
-                <p>This project gives a glimpse of what the shop looks like and the available coffee options.</p>
-            </li>
-            <li>
-                <h2>Online College Bus Booking</h2>
-                <p>This project helps students book buses online for their college transportation.</p>
-            </li>
-        </ul>
-    </section>
-    <section id="Education">
-        <h1>Education</h1>
-        <p>Currently pursuing B.Tech in Computer Science Engineering at sri Eshwar college of engineering, coimbatore</p>
-        <p>Anticipated graduation date: 2028</p> 
+    <!-- Slide Container -->
+    <div class="slide-container">
+        <!-- Slide 1: Home -->
+        <section class="slide active" id="home" data-slide="0">
+            <div class="slide-content">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="typing-text">Jaianish</span>
+                    </h1>
+                    <div class="hero-welcome">
+                        <h2 class="welcome-text">Welcome to My Portfolio</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>I create beautiful and functional websites using HTML, CSS, and JavaScript. Passionate about building user-friendly web experiences that combine creativity with clean code.</p>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">2+</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">3</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">2025</div>
+                            <div class="stat-label">Started</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="nextSlide()">
+                            <i class="fas fa-rocket"></i>
+                            Explore My Work
+                        </button>
+                        <button class="btn btn-secondary" onclick="goToSlide(4)">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-icon"><i class="fab fa-html5"></i></div>
+                        <div class="floating-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-icon"><i class="fab fa-js-square"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Email: jaianishj0806@gmail.com</p>
-        <p>LinkedIn: Jaianish Jayabharath</p>
-    </section>
+        <!-- Slide 2: About -->
+        <section class="slide" id="about" data-slide="1">
+            <div class="slide-content">
+                <div class="about-container">
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="../images/jaianish.jpg" alt="Jaianish" class="profile-img">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">About Me</h2>
+                        <div class="about-description">
+                            <p>I am Jaianish, a passionate frontend developer who loves creating beautiful and functional web experiences. I specialize in building responsive, user-friendly websites using modern technologies like HTML5, CSS3, and JavaScript.</p>
+                            <p>My journey in web development is driven by a desire to bridge the gap between design and functionality, creating interfaces that not only look stunning but also provide exceptional user experiences.</p>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 by Jaianish</p>
+        <!-- Slide 3: Projects -->
+        <section class="slide" id="projects" data-slide="2">
+            <div class="slide-content">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Coffee Website</h3>
+                        <p>A modern, responsive website showcasing a coffee shop's atmosphere and menu options with interactive elements and smooth animations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <button class="project-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h3>To-Do List App</h3>
+                        <p>A dynamic task management application that helps users organize their daily activities with add, edit, delete, and mark complete functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <button class="project-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Education -->
+        <section class="slide" id="education" data-slide="3">
+            <div class="slide-content">
+                <h2 class="section-title">Education</h2>
+                <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>B.Tech in Computer Science Engineering</h3>
+                            <p class="institution">Sri Eshwar College of Engineering, Coimbatore</p>
+                            <p class="duration">2024 - 2028</p>
+                            <div class="education-details">
+                                <p>Currently pursuing my undergraduate degree with a focus on software development, web technologies, and computer science fundamentals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Contact -->
+        <section class="slide" id="contact" data-slide="4">
+            <div class="slide-content">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>jaianishj0806@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>Jaianish Jayabharath</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Jaianish. All rights reserved.</p>
     </footer>
 
-    <script src="portfolio.js"></script> <!-- JavaScript for Smooth Scrolling -->
+    <script src="portfolio.js"></script>
 </body>
 </html>
