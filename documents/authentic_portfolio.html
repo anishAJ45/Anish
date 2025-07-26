@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaianish - Student Developer</title>
+    <link rel="stylesheet" href="authentic_portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <h1 class="glitch" data-text="Welcome to my portfolio">Welcome to my portfolio</h1>
+    </div>
+    <!-- Loader End -->
+
+    <div id="main-content" style="display: none;">
+        <!-- Simple Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">Jaianish</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm Jaianish 👋</h1>
+                        <p class="hero-subtitle">First-year Computer Science student at Sri Eshwar College of Engineering</p>
+                        <p class="hero-description">
+                            I'm just starting my coding journey and loving every minute of it! Currently learning 
+                            web development and Python. I enjoy turning ideas into working projects, even if they're 
+                            simple ones. Always excited to learn something new.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">See My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="../images/jaianish.jpg" alt="Jaianish" class="profile-pic">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a first-year Computer Science Engineering student who discovered a passion for coding. 
+                            What started as curiosity about "how websites work" has turned into hours of learning, 
+                            building, and sometimes debugging until 2 AM (worth it though!).
+                        </p>
+                        <p>
+                            I'm currently focused on web development fundamentals - HTML, CSS, JavaScript, and Python. 
+                            Each project teaches me something new, and I love that feeling when code finally works 
+                            the way you imagined it.
+                        </p>
+                        
+                        <div class="skills-simple">
+                            <h3>What I'm Learning</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">HTML & CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Git & GitHub</span>
+                                <span class="skill-tag">Problem Solving</span>
+                            </div>
+                        </div>
+
+                        <div class="currently-learning">
+                            <h3>Currently Working On</h3>
+                            <ul>
+                                <li>📚 Improving my JavaScript skills</li>
+                                <li>🎨 Learning responsive design principles</li>
+                                <li>🐍 Building more Python projects</li>
+                                <li>📖 Reading "Clean Code" by Robert Martin</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-subtitle">Small projects, big learning experiences</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Python To-Do List</h3>
+                            <div class="project-links">
+                                <a href="https://github.com/anishAJ45/to-do-list" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            My first "real" Python project! Started as a simple list, but I kept adding features 
+                            as I learned more. It can save tasks to a file, mark them complete, and has a clean 
+                            command-line interface. Taught me a lot about file handling and organizing code.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">File I/O</span>
+                            <span class="tech-tag">CLI</span>
+                        </div>
+                        <div class="project-learnings">
+                            <strong>What I learned:</strong> File operations, user input validation, basic OOP concepts
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Coffee Shop Website</h3>
+                            <div class="project-links">
+                                <a href="https://anishaj45.github.io/coffee-shop/" target="_blank" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/anishAJ45/coffee-shop" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A responsive coffee shop website that actually looks decent on mobile! Spent way too much 
+                            time getting the CSS just right, but learned tons about flexbox, grid, and making things 
+                            look good on different screen sizes.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-learnings">
+                            <strong>What I learned:</strong> CSS Grid, Flexbox, responsive design, GitHub Pages deployment
+                        </div>
+                    </div>
+                </div>
+
+                <div class="future-projects">
+                    <h3>What's Next?</h3>
+                    <p>Planning to build a simple weather app using APIs, and maybe a basic portfolio website for a friend. 
+                    Always looking for new project ideas!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Always happy to chat about code, projects, or just say hi!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>jaianishj0806@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <h4>GitHub</h4>
+                                <p>anishAJ45</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>Jaianish Jayabharath</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-note">
+                        <p>
+                            <strong>Quick note:</strong> I'm still learning, so if you're a fellow student or someone 
+                            who wants to share coding tips, I'd love to hear from you! Always open to feedback 
+                            and learning opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 Jaianish Jayabharath. Built with HTML, CSS, and lots of coffee ☕</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="authentic_portfolio.js"></script>
+</body>
+</html>

@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Jaianish Portfolio</title>
+    <title>Jaianish - Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Glitch Loading Screen -->
+    <div class="glitch-screen">
+        <div class="glitch-container">
+            <div class="glitch-text" data-text="JAIANISH">JAIANISH</div>
+            <div class="glitch-subtitle">INITIALIZING...</div>
+        </div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particle Background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
                 <span class="logo-text">Jaianish</span>
-                <span class="logo-subtitle">Frontend Developer</span>
+                <div class="logo-dot"></div>
             </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link active" data-slide="0">
-                    <i class="fas fa-home"></i>
-                    <span>Home</span>
-                </a>
-                <a href="#about" class="nav-link" data-slide="1">
-                    <i class="fas fa-user"></i>
-                    <span>About</span>
-                </a>
-                <a href="#projects" class="nav-link" data-slide="2">
-                    <i class="fas fa-code"></i>
-                    <span>Projects</span>
-                </a>
-                <a href="#education" class="nav-link" data-slide="3">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Education</span>
-                </a>
-                <a href="#contact" class="nav-link" data-slide="4">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
             </div>
             <div class="hamburger">
                 <span></span>
@@ -45,208 +60,365 @@
         </div>
     </nav>
 
-    <!-- Slide Container -->
-    <div class="slide-container">
-        <!-- Slide 1: Home -->
-        <section class="slide active" id="home" data-slide="0">
-            <div class="slide-content">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="typing-text">Jaianish</span>
-                    </h1>
-                    <div class="hero-welcome">
-                        <h2 class="welcome-text">Welcome to My Portfolio</h2>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hi, I'm</span>
+                    <span class="name">Jaianish</span>
+                    <span class="role">Creative Developer</span>
+                </h1>
+                <p class="hero-description">
+                    The pixel-perfectionist who turns coffee into code ☕💻. I breathe life into designs and make them dance with CSS, JavaScript, and a sprinkle of creativity. Whether it's building buttery-smooth interfaces or responsive layouts that shine on every screen, I’m here to make the web beautiful and functional.
+
+
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-label">Project</span>
                     </div>
-                    <div class="hero-description">
-                        <p>I create beautiful and functional websites using HTML, CSS, and JavaScript. Passionate about building user-friendly web experiences that combine creativity with clean code.</p>
+                    <div class="stat">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Technologies</span>
                     </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">2+</div>
-                            <div class="stat-label">Projects</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Technologies</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">2025</div>
-                            <div class="stat-label">Started</div>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">Dedication %</span>
                     </div>
-                    <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="nextSlide()">
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-image-container">
+                    <div class="profile-image">
+                        <img src="../images/jaianish.jpg" alt="Jaianish">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>Hello! I'm Jaianish Jayabharath</h3>
+                        <p>A passionate Computer Science Engineering student at Sri Eshwar College of Engineering, 
+                        Coimbatore. I specialize in frontend development and love creating digital experiences 
+                        that make a difference.</p>
+                    </div>
+                    <div class="text-block">
+                        <h3>My Journey</h3>
+                        <p>Currently in my first year, I'm building a strong foundation in programming while 
+                        working on real-world projects. I believe in learning by doing and constantly 
+                        challenging myself with new technologies.</p>
+                    </div>
+                    <div class="qualities">
+                        <div class="quality">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Creative Problem Solver</span>
+                        </div>
+                        <div class="quality">
+                            <i class="fas fa-code"></i>
+                            <span>Clean Code Advocate</span>
+                        </div>
+                        <div class="quality">
                             <i class="fas fa-rocket"></i>
-                            Explore My Work
-                        </button>
-                        <button class="btn btn-secondary" onclick="goToSlide(4)">
-                            <i class="fas fa-paper-plane"></i>
-                            Get In Touch
-                        </button>
+                            <span>Fast Learner</span>
+                        </div>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="floating-elements">
-                        <div class="floating-icon"><i class="fab fa-html5"></i></div>
-                        <div class="floating-icon"><i class="fab fa-css3-alt"></i></div>
-                        <div class="floating-icon"><i class="fab fa-js-square"></i></div>
+                <div class="about-visual">
+                    <div class="experience-card">
+                        <div class="card-header">
+                            <h4>Education</h4>
+                            <span class="year">2024-2028</span>
+                        </div>
+                        <div class="card-content">
+                            <h5>B.Tech Computer Science Engineering</h5>
+                            <p>Sri Eshwar College of Engineering</p>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 25%"></div>
+                            </div>
+                            <span class="progress-text">First Year - 25% Complete</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Slide 2: About -->
-        <section class="slide" id="about" data-slide="1">
-            <div class="slide-content">
-                <div class="about-container">
-                    <div class="about-image">
-                        <div class="image-wrapper">
-                            <img src="../images/jaianish.jpg" alt="Jaianish" class="profile-img">
-                            <div class="image-overlay"></div>
-                        </div>
-                    </div>
-                    <div class="about-text">
-                        <h2 class="section-title">About Me</h2>
-                        <div class="about-description">
-                            <p>I am Jaianish, a passionate frontend developer who loves creating beautiful and functional web experiences. I specialize in building responsive, user-friendly websites using modern technologies like HTML5, CSS3, and JavaScript.</p>
-                            <p>My journey in web development is driven by a desire to bridge the gap between design and functionality, creating interfaces that not only look stunning but also provide exceptional user experiences.</p>
-                        </div>
-                        <div class="skills-grid">
-                            <div class="skill-item">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
                                 <i class="fab fa-html5"></i>
-                                <span>HTML5</span>
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
                                 <i class="fab fa-css3-alt"></i>
-                                <span>CSS3</span>
                             </div>
-                            <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
                                 <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Slide 3: Projects -->
-        <section class="slide" id="projects" data-slide="2">
-            <div class="slide-content">
-                <h2 class="section-title">My Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-coffee"></i>
-                        </div>
-                        <h3>Coffee Website</h3>
-                        <p>A modern, responsive website showcasing a coffee shop's atmosphere and menu options with interactive elements and smooth animations.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <button class="project-btn">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Project
-                        </button>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-list-check"></i>
-                        </div>
-                        <h3>To-Do List App</h3>
-                        <p>A dynamic task management application that helps users organize their daily activities with add, edit, delete, and mark complete functionality.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <button class="project-btn">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Project
-                        </button>
-                    </div>
-                </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my latest work and creativity</p>
             </div>
-        </section>
-
-        <!-- Slide 4: Education -->
-        <section class="slide" id="education" data-slide="3">
-            <div class="slide-content">
-                <h2 class="section-title">Education</h2>
-                <div class="education-container">
-                    <div class="education-card">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-content">
-                            <h3>B.Tech in Computer Science Engineering</h3>
-                            <p class="institution">Sri Eshwar College of Engineering, Coimbatore</p>
-                            <p class="duration">2024 - 2028</p>
-                            <div class="education-details">
-                                <p>Currently pursuing my undergraduate degree with a focus on software development, web technologies, and computer science fundamentals.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/images/logo.jpg" alt="Coffee Shop Website" />
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="https://anishaj45.github.io/coffee-shop/" target="_blank" class="project-btn live-demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="https://github.com/anishAJ45/coffee-shop" target="_blank" class="project-btn see-code">
+                                    <i class="fab fa-github"></i>
+                                    <span>See Code</span>
+                                </a>
                             </div>
                         </div>
                     </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Coffee Shop Website</h3>
+                            <span class="project-status">Completed</span>
+                        </div>
+                        <p class="project-description">
+                            A beautifully crafted coffee shop website with stunning visuals, interactive menu sections,
+                            smooth scrolling animations, and fully responsive design. Features modern UI/UX principles
+                            and optimized performance across all devices.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://anishaj45.github.io/coffee-shop/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span>Live Demo</span>
+                            </a>
+                            <a href="https://github.com/anishAJ45/coffee-shop" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i>
+                                <span>See Code</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Slide 5: Contact -->
-        <section class="slide" id="contact" data-slide="4">
-            <div class="slide-content">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
                 <h2 class="section-title">Get In Touch</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email</h3>
-                                <p>jaianishj0806@gmail.com</p>
-                            </div>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <a href="mailto:jaianishj0806@gmail.com?subject=Hello%20Jaianish&body=Hi%20Jaianish,%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0A" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h3>LinkedIn</h3>
-                                <p>Jaianish Jayabharath</p>
-                            </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>jaianishj0806@gmail.com</p>
+                            <span class="contact-action">Click to send email</span>
                         </div>
-                    </div>
-                    <div class="contact-form">
-                        <form>
-                            <div class="form-group">
-                                <input type="text" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="Your Email" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Your Message" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane"></i>
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
+                    </a>
+                    <a href="#" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p>Jaianish Jayabharath</p>
+                            <span class="contact-action">Click to connect</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/anishAJ45" target="_blank" class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p>anishAJ45</p>
+                            <span class="contact-action">Click to view profile</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-        </section>
-    </div>
-
-
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Jaianish. All rights reserved.</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Jaianish Jayabharath. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script src="portfolio.js"></script>
+    <script src="new_portfolio.js"></script>
 </body>
 </html>
